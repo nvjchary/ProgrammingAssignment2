@@ -30,12 +30,12 @@ x<-matrix(c(4,3,4,2),
 + byrow=TRUE
 + )
 
- +cx <- makeCacheMatrix(x) // Create our special matrix
+cx <- makeCacheMatrix(x) // Create our special matrix
  
- +x$get()                // returns to be inverted matrix
+x$get()                // returns to be inverted matrix
  
- +CacheSolve(cx)         // Return the inverse
+CacheSolve(cx)         // Return the inverse
  
- +cacheSolve(cx)        // Call the 2nd time, so return the cached inverse
+cacheSolve(cx)        // Call the 2nd time, so return the cached inverse
 
 
