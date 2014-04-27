@@ -22,19 +22,19 @@ cache the inverse of a matrix.
 
 # creates a new matrix
 
-#4 3
-#4 2
+4 3
+4 2
 
-#x<-matrix(c(4,3,4,2),
-#+ ncol=2,
-#+ nrow=2,
-#+ byrow=TRUE
-#+ )
+x<-matrix(c(4,3,4,2),
++ ncol=2,
++ nrow=2,
++ byrow=TRUE
++ )
 
 
-#cx <- makeCacheMatrix(x) ## Create our special matrix
-#cx$get()                ## returns to be inverted matrix
-#cacheSolve(cx)         ## Return the inverse
-#cacheSolve(cx)        ## Call the 2nd time, so return the cached inverse
+cx <- makeCacheMatrix(x) // Create our special matrix
+cx$get()                // returns to be inverted matrix
+cacheSolve(cx)         // Return the inverse
+cacheSolve(cx)        // Call the 2nd time, so return the cached inverse
 
 
