@@ -16,11 +16,10 @@ cache the inverse of a matrix.
     `cacheSolve` should retrieve the inverse from the cache.
 
 
-##Example:
+#Example:
 
-#To test the code please type these lines in rstudio after running cachematrix.R
-
-# creates a new matrix
+To test the code please type these lines in rstudio after running cachematrix.R
+create a new matrix
 
 4 3
 4 2
@@ -30,7 +29,6 @@ x<-matrix(c(4,3,4,2),
 + nrow=2,
 + byrow=TRUE
 + )
-
 
 cx <- makeCacheMatrix(x) // Create our special matrix
 cx$get()                // returns to be inverted matrix
